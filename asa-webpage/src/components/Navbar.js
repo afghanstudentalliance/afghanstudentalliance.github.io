@@ -30,7 +30,6 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             Columbia ASA
-            <i class="fab fa-typo3" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -42,41 +41,42 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link // TODO: Change link and name
-                to="/services"
+              <Link
+                to="/about-us"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Services
+                About
               </Link>
             </li>
             <li className="nav-item">
-              <Link // TODO: Change link and name
-                to="/products"
+              <Link
+                to="/events"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Products
+                Events
               </Link>
             </li>
-
-            <li>
-              <Link // TODO: Change link and name and className
-                to="/sign-up"
-                className="nav-links-mobile"
+            <li className="nav-item">
+              <Link
+                to="/mentorship"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Mentorship
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/join-us"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Join
               </Link>
             </li>
           </ul>
-          {button && (
-            <Button // TODO: Get rid of button?
-              buttonStyle="btn--outline"
-            >
-              SIGN UP
-            </Button>
-          )}
         </div>
       </nav>
     </>
