@@ -1,6 +1,6 @@
 import React from "react";
 import "./Cards.css";
-import CardItem from "./CardItem";
+import { Button } from "./Button";
 
 function Cards() {
   return (
@@ -14,6 +14,13 @@ function Cards() {
             region. Our mission includes fostering a strong sense of unity and
             pursuing humanitarian initiatives globally.
           </p>
+          <Button
+            className="btns"
+            buttonStyle="btn--primary"
+            buttonSize="btn--large"
+          >
+            About us
+          </Button>
         </div>
         <div className="cards-image">
           <img src="/images/img-1.jpg" alt="Afghan Students Alliance" />

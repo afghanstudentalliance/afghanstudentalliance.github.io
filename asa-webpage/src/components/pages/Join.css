@@ -1,0 +1,36 @@
+.join-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  min-height: 80vh;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.join-us-iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 800px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .join-us-iframe {
+    height: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .join-us-container {
+    padding: 20px;
+  }
+
+  .join-us-iframe {
+    height: 500px;
+  }
+}
